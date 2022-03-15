@@ -217,3 +217,64 @@
     }
 }
 /* EX-12 SOLUTION */
+
+/* EX-13 SOLUTION */
+
+.ex-13-button:hover .ex-13-top-white {
+    animation: topwhite-total-move 3s linear;
+}
+@keyframes topwhite-total-move {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    30% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    45% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    90% {
+        left: -15px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: bottomwhite-total-move 3s linear;
+}
+@keyframes bottomwhite-total-move {
+    0% {
+        right: 10%;
+        bottom: -10px;
+    }
+    30% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    45% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    90% {
+        right: -15px;
+        bottom: -10px;
+    }
+    100% {
+        right: 10%;
+        bottom: -10px;
+    }
+}
