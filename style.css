@@ -47,21 +47,68 @@
 .ex-4-square:hover {
     opacity: 0%;
 }
+/*--/ EX-4 SOLUTION */
+
 
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    transition: 4s;
 }
+
+/* EX-5 SOLUTION */
+.ex-5-square:hover {
+    /* width: 120px;
+    height: 120px; */
+    transform: scale(2);
+}
+.ex-5-square:active {
+    /* width: 30px;
+    height: 30px; */
+    transform: scale(.5);
+}
+/* EX-5 SOLUTION */
+
+
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
+/* EX-6 SOLUTION */
+.ex-6-img:hover {
+    filter: grayscale(1);
+}
+/* EX-6 SOLUTION */
+
+/* EX-7 SOLUTION */
+.ex-7-img {
+    transition: 10s;
+}
+.ex-7-img:hover {
+    filter: grayscale(10) sepia(5) ;
+}
+/* EX-7 SOLUTION */
+
+/* EX-8 SOLUTION */
+
+.ex-8-img {
+    transition: 3s;
+}
+
+.ex-8-img:hover {
+    filter: grayscale(.8) sepia(.6);
+    border-radius: 50px;
+}
+/* EX-8 SOLUTION */
 
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
 }
+
+
+
 .ex-10-icon {
     font-size: 60px;
 }
