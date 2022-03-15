@@ -102,19 +102,60 @@
 }
 /* EX-8 SOLUTION */
 
+/* EX-9 SOLUTION */
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
+    transition: 4s;
 }
+.ex-9-img:hover {
+    filter: grayscale(.8) sepia(.6);
+    border-radius: 50px;
+    transform: scale(2);
+}
+/* EX-9 SOLUTION */
 
-
+/* EX-10 SOLUTION */
 
 .ex-10-icon {
     font-size: 60px;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
 }
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
+    }
+}
+/* EX-10 SOLUTION */
+
+/* EX-11 SOLUTION */
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation-name: spin-revert;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+}
+@keyframes spin-revert {
+    0% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+/* EX-11 SOLUTION */
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -144,3 +185,35 @@
     width: 60px;
     height: 20px;
 }
+/* EX-12 SOLUTION */
+
+.ex-12-button:hover .ex-12-top-white {
+    animation: move-top 3s linear;
+}
+@keyframes move-top {
+    0% {
+        left: 20%;
+    }
+    50% {
+        left: 60%;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: move-bottom 3s linear;
+}
+@keyframes move-bottom {
+    0% {
+        right: 20%;
+    }
+    50% {
+        right: 60%;
+    }
+    100% {
+        right: 100%;
+    }
+}
+/* EX-12 SOLUTION */
